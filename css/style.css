@@ -17,7 +17,7 @@
 }
 
 header {
-    background-image: url(/images/header-background.png) ;
+    background-image: url(../images/header-background.png) ;
     background-size: cover; 
     background-position: center; 
     display:flex;
@@ -90,7 +90,7 @@ flex-shrink: 0;
 /* hero */
 
 .avatar-hero {
-    background-image: url(/images/background_hero.jpg);
+    background-image: url(../images/background_hero.jpg);
     width: 1440px;
     height: 740px;
     flex-shrink: 0;
@@ -181,7 +181,7 @@ line-height: 1.20;
 /* trailer */
 
 .trailer {
-    background-image: url(/images/trailer_background.png);
+    background-image: url(../images/trailer_background.png);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -244,7 +244,7 @@ line-height: 1.20;
 /* mova */
 
 .language {
-background-image: url(/images/mova_background.png);
+background-image: url(../images/mova_background.png);
 /* width: 1442px;
 height: 350px;
 flex-shrink: 0; */
@@ -310,7 +310,7 @@ line-height: 1.20;
 /* footer */
 
 .footer {
-    background-image: url(/images/footer_background.png);
+    background-image: url(../images/footer_background.png);
 width: 1440px;
 height: 223px;
 flex-shrink: 0;
