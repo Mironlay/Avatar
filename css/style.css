@@ -1,7 +1,7 @@
 :root {
     --background-color:rgba(255, 255, 255, 1);
     --third-quote-background: rgba(255, 255, 255, 0.7);
-    --button-background: rgba(0, 0, 0, 0);
+    --button-background2: rgba(0, 0, 0, 0);
     --item-mova-background: rgba(255, 255, 255, 0.7);
     --hover-button: rgb(0, 0, 139);
     --link-color:rgb(200, 200, 200);
@@ -16,31 +16,22 @@
     --button-background: rgba(11, 14, 102, 1);
 }
 
+body {
+    font-family: "Headland One", serif;
+}
+
 header {
     background-image: url(../images/header-background.png) ;
     background-size: cover; 
-    background-position: center; 
-    display:flex;
-    justify-content: space-between; 
-    width: 1440px;
-    height: 150px;
-    flex-shrink: 0;
+    /* background-position: center; */
 } 
-
-
-.nav-list {
-    display: flex;
-  }
 
 .nav-link {
     color: var(--main-color);
 font-family: "Inter", sans-serif;
 font-size: 20px;
-font-style: normal;
 font-weight: 600;
 line-height: 1.2;
-display: flex;
-margin-right: 38px;
 }
 
 .nav-link:hover,
@@ -55,7 +46,6 @@ margin-right: 38px;
 .header-button {
     color: var(--button-text-color);
 text-align: center;
-font-family: "Headland One", serif;
 font-size: 20px;
 font-weight: 400;
 line-height: 1.25;
@@ -64,7 +54,6 @@ border: 3px solid var(--button-boarder);
 background: var(--button-background);
 width: 141px;
 height: 41.694px;
-flex-shrink: 0;
 }
 
 .header-button:hover,
@@ -81,19 +70,26 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.25;
 border: none;
-background-color: var(--button-background);
+background-color: var(--button-background2);
 width: 107px;
 height: 20px;
-flex-shrink: 0;
+}
+
+.button-title,
+.button-title2 {
+    color: var(--main-color);
+    text-align: center;
+    font-family: "Hammersmith One";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 /* hero */
 
 .avatar-hero {
     background-image: url(../images/background_hero.jpg);
-    width: 1440px;
-    height: 740px;
-    flex-shrink: 0;
+    background-size: cover;
 }
 
 .hero-title {
@@ -104,13 +100,6 @@ font-weight: 400;
 line-height: 1.2;
 width: 298px;
 height: 96px;
-flex-shrink: 0;
-}
-
-.hero-image {
-    width: 152px;
-height: 40px;
-flex-shrink: 0;
 }
 
 .hero-title2 {
@@ -126,16 +115,12 @@ flex-shrink: 0;
 
 .hero-button {
     color: var(--button-text-color);
-font-family: "Headland One", sans-serif;
 font-size: 24px;
 font-weight: 400;
 line-height: 1.25;
 border-radius: 45px 0px;
 border: 3px solid var(--button-boarder);
 background: var(--button-background);
-width: 260px;
-height: 80px;
-flex-shrink: 0;
 }
 
 .hero-button:hover,
@@ -143,22 +128,24 @@ flex-shrink: 0;
     background-color: var(--hover-button);
 }
 
-.hero-list2 {
-    float: right;
-}
-
 /* quote */
 
 .quote {
     background-color: var(--background-color);
 text-align: center;
-justify-content: center;
-width: 1440px;
-height: 350px;
-flex-shrink: 0;
 }
 
 .quote-title {
+    color: var(--quote-text);
+text-align: center;
+font-family: "Inter", sans-serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.22;
+}
+
+.quote-title2 {
     color: var(--quote-text);
 text-align: center;
 font-family: "Inter", sans-serif;
@@ -181,18 +168,12 @@ line-height: 1.20;
 
 .trailer {
     background-image: url(../images/trailer_background.png);
-display: flex;
-justify-content: center;
-align-items: center;
-width: 1440px;
-height: 741px;
-flex-shrink: 0;
+    background-size: cover; 
 }
 
 .trailer-button {
     color: var(--button-text-color);
 text-align: center;
-font-family: "Headland One", sans-serif;
 font-size: 24px;
 font-weight: 400;
 line-height: 1.25;
@@ -214,14 +195,19 @@ flex-shrink: 0;
 .second-quote{
     background-color: var(--background-color);
 text-align: center;
-justify-content: center;
-width: 1440px;
-height: 350px;
-flex-shrink: 0;
 }
 
 
 .second-quote-title {
+    color: var(--first-mova-text);
+text-align: center;
+font-family: "Inter", sans-serif;
+font-size: 36px;
+font-weight: 400;
+line-height: 1.22;
+}
+
+.second-quote-title2 {
     color: var(--first-mova-text);
 text-align: center;
 font-family: "Inter", sans-serif;
@@ -244,16 +230,20 @@ line-height: 1.20;
 
 .language {
 background-image: url(../images/mova_background.png);
-/* width: 1442px;
-height: 350px;
-flex-shrink: 0; */
+background-size: cover;
+}
+
+.language-title {
+    color: var(--first-mova-text);
+text-align: center;
+font-family: "Headland One", serif;
+font-size: 32px;
+font-weight: 400;
+line-height: 1.25;
 }
 
 .language-item {
     background-color: var(--item-mova-background);
-width: 320px;
-height: 240px;
-flex-shrink: 0;
 /* width: 25%; 
 height: 60%; */
 
@@ -261,8 +251,7 @@ height: 60%; */
 
 .item-title {
     color: var(--first-mova-text);
-text-align: justify;
-font-family: "Headland One", serif;
+text-align: center;
 font-size: 24px;
 font-weight: 400;
 line-height: 1.00;
@@ -270,8 +259,7 @@ line-height: 1.00;
 
 .item-desc {
     color: var(--second-mova-text);
-text-align: justify;
-font-family: "Headland One", serif;
+text-align: center;
 font-size: 24px;
 font-weight: 400;
 line-height: 1.00;
@@ -282,13 +270,18 @@ line-height: 1.00;
 .third-quote {
     background-color: var(--third-quote-background);
 text-align: center;
-justify-content: center;
-width: 1438px;
-height: 350px;
-flex-shrink: 0;
 }
 
 .third-quote-title {
+    color: var(--first-mova-text);
+text-align: center;
+font-family: "Inter", sans-serif;
+font-size: 36px;
+font-weight: 400;
+line-height: 1.22;
+}
+
+.third-quote-title2 {
     color: var(--first-mova-text);
 text-align: center;
 font-family: "Inter", sans-serif;
@@ -310,14 +303,21 @@ line-height: 1.20;
 
 .footer {
     background-image: url(../images/footer_background.png);
-width: 1440px;
-height: 223px;
-flex-shrink: 0;
+    background-size: cover;
 }
 
 .footer-title {
     color: var(--main-color);
-text-align: justify;
+text-align: center;
+font-family: "Inter", sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.2;
+}
+
+.footer-title2 {
+    color: var(--main-color);
+text-align: center;
 font-family: "Inter", sans-serif;
 font-size: 20px;
 font-weight: 400;
@@ -326,7 +326,7 @@ line-height: 1.2;
 
 .title-link {
     color: var(--main-color);
-text-align: justify;
+text-align: center;
 font-family: "Inter", sans-serif;
 font-size: 20px;
 font-weight: 400;
@@ -340,7 +340,7 @@ line-height: 1.2;
 
 .footer-desc {
     color: var(--main-color);
-text-align: justify;
+text-align: center;
 font-family: "Inter", sans-serif;
 font-size: 14px;
 font-weight: 400;
