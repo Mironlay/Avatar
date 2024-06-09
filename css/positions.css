@@ -231,8 +231,8 @@
 
 .third-quote-title {
     width: 938px;
-    margin-bottom: 4px;
     padding: 0 auto;
+    margin-bottom: 4px;
 }
 
 .third-quote-title2 {
@@ -265,8 +265,16 @@
     margin-right: 160px;
 }
 
+.footer-desc-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .footer-item {
     display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .footer-title {
@@ -283,7 +291,16 @@
     margin-right: 20px;
     width: 269px;
     height: 2px;
-    /* padding-top: 2px; */
 }
 
+.footer-desc {
+    margin-top: 37px;
+    padding: 0 auto;
+    
+}
+
+/* .title-image-box {
+    display: flex;
+    align-items: center;
+} */
 
